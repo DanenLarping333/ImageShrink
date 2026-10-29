@@ -1,0 +1,11 @@
+const assert=require('node:assert/strict'),c=require('./core.js');
+assert.deepEqual(c.dimensions(4000,3000,1920),{width:1920,height:1440});
+assert.deepEqual(c.dimensions(3000,4000,800),{width:600,height:800});
+assert.deepEqual(c.dimensions(400,300,1920),{width:400,height:300});
+assert.deepEqual(c.dimensions(4000,3000,0),{width:4000,height:3000});
+assert.deepEqual(c.dimensions(16000,1,800),{width:800,height:1});
+assert.throws(()=>c.dimensions(0,3,800));
+assert.equal(c.filename('holiday.photo.png','image/jpeg'),'holiday.photo-small.jpg');
+assert.equal(c.filename('photo.jpg','image/png'),'photo-small.png');
+assert.equal(c.bytes(1048576),'1.00 MB');
+console.log('Passed: aspect ratio, no upscale, original size, extreme ratio, invalid size, filename and units.');
