@@ -3,6 +3,8 @@ Less size. Same story.
 
 A dependency-free JavaScript tool to resize and compress JPEG, PNG and WebP images directly in the browser.
 
+https://danenlarping333.github.io/ImageShrink/
+
 ## Use
 Extract this entire folder and open index.html in a modern browser. Keep style.css, core.js and app.js alongside it. Drop one image, choose the output format, quality and maximum longest side, then click Shrink image. Compare Original and Result, and download the new file.
 
